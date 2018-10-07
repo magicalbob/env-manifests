@@ -29,8 +29,4 @@ node default {
     unless  => "/opt/puppetlabs/bin/puppet module list | /usr/bin/grep puppetlabs-vcsrepo"
   }
 
-  exec { 'rtyler-jenkins':
-    command => "/opt/puppetlabs/bin/puppet module install rtyler/jenkins",
-    unless  => "/opt/puppetlabs/bin/puppet module list | /usr/bin/grep rtyler/jenkins"
-  }
 }
